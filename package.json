@@ -1,0 +1,33 @@
+{
+  "name": "pydoit-docker-action",
+  "version": "1.0.0",
+  "description": "Github docker action with pydoit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anuraags/pydoit-docker-action.git"
+  },
+  "keywords": [
+    "Github",
+    "Docker",
+    "Actions"
+  ],
+  "author": "Anuraag Sridhar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anuraags/pydoit-docker-action/issues"
+  },
+  "homepage": "https://github.com/anuraags/pydoit-docker-action#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
