@@ -1,0 +1,16 @@
+# action.yml
+name: "DoIt"
+description: "Run the python doit task automation tool"
+inputs:
+  task_name: # task name
+    description: "Task name"
+    required: true
+    default: "list"
+outputs:
+  time: # id of output
+    description: "Time of task run"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.task_name }}
