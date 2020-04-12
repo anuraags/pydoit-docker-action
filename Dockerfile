@@ -5,7 +5,7 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 RUN apt-get -y update && apt-get -y install yarn nodejs npm python3-pip
-RUN pip3 install doit pystache jinja2 paramiko
+RUN pip3 install doit pystache jinja2 paramiko alembic
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
